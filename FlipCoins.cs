@@ -19,39 +19,46 @@ namespace FunctionalProgrmas
         /// </summary>
         public void FlipResults()
         {
-            ////taking user input 
-            Console.WriteLine("How many times you want to flip coin");
-            int num = Convert.ToInt32(Console.ReadLine());
-            int hcount = 0;
-            int tcount = 0;
-            ////using random class to generate random numbers
-            Random r = new Random();
-            ////iteration is use to generate total num of times 
-            ////coins flipping
-            for (int i = 1; i <= num; i++)
+            try
             {
-                ////taking user input to flip coin
-                Console.WriteLine("Press any key to flip coins");
-                Console.ReadLine();
-                ////random generated num is stored inside n
-                int n = Convert.ToInt32(r.Next(0, 2));
-                if (n == 1)
+                ////taking user input 
+                Console.WriteLine("How many times you want to flip coin");
+                int num = Convert.ToInt32(Console.ReadLine());
+                int hcount = 0;
+                int tcount = 0;
+                ////using random class to generate random numbers
+                Random r = new Random();
+                ////iteration is use to generate total num of times 
+                ////coins flipping
+                for (int i = 1; i <= num; i++)
                 {
-                    hcount++;
-                    Console.WriteLine("It's Heads");
+                    ////taking user input to flip coin
+                    Console.WriteLine("Press any key to flip coins");
+                    Console.ReadLine();
+                    ////random generated num is stored inside n
+                    int n = Convert.ToInt32(r.Next(0, 2));
+                    if (n == 1)
+                    {
+                        hcount++;
+                        Console.WriteLine("It's Heads");
+                    }
+                    else
+                    {
+                        tcount++;
+                        Console.WriteLine("Oops u got tails");
+                    }
                 }
-                else
-                {
-                    tcount++;
-                    Console.WriteLine("Oops u got tails");
-                }
+                ////Calculating percenatge of heads and tails
+                int perOfHeads = (hcount * 100) / num;
+                int perOfTails = (tcount * 100) / num;
+                ////Printing calculated percentage
+                Console.WriteLine("Percentage of heads: " + perOfHeads);
+                Console.WriteLine("Percentage of Tails: " + perOfTails);
             }
-            ////Calculating percenatge of heads and tails
-            int perOfHeads = (hcount * 100) / num;
-            int perOfTails = (tcount * 100) / num;
-            ////Printing calculated percentage
-            Console.WriteLine("Percentage of heads: " + perOfHeads);
-            Console.WriteLine("Percentage of Tails: " + perOfTails);
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }

@@ -18,7 +18,16 @@ namespace FunctionalProgrmas
         /// <returns>return integer</returns>
         public static Int32 GetInt()
         {
-            int n = Convert.ToInt32(Console.ReadLine());
+            int n = 0;
+            try
+            {
+                n = Convert.ToInt32(Console.ReadLine());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
             return n;
         }
 
@@ -28,7 +37,16 @@ namespace FunctionalProgrmas
         /// <returns>return string</returns>
         public static string GetString()
         {
-            string st = Console.ReadLine();
+            string st = " ";
+            try
+            {
+                st = Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
             return st;
         }
 
@@ -51,12 +69,19 @@ namespace FunctionalProgrmas
         public static bool IsPrime(int n)
         {
             bool res = false;
-            for (int i = 2; i <= n / 2; i++)
+            try
             {
-                if (n % i == 0)
+                for (int i = 2; i <= n / 2; i++)
                 {
-                    return res;
+                    if (n % i == 0)
+                    {
+                        return res;
+                    }
                 }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
 
             return true;

@@ -50,17 +50,17 @@ namespace FunctionalProgrmas
         private char[,] a = new char[3, 3];
 
         /// <summary>
-        /// using get set for row
+        /// using Gets Sets for row
         /// </summary>
         private int Row { get => this.Row1; set => this.Row1 = value; }
 
         /// <summary>
-        /// using get and set for row1
+        /// using Gets and Sets for row1
         /// </summary>
         private int Row1 { get; set; }
 
         /// <summary>
-        /// using get set for array of characters
+        /// using Gets Sets for array of characters
         /// </summary>
         private char[,] A { get => this.a; set => this.a = value; }
 

@@ -20,16 +20,23 @@ namespace FunctionalProgrmas
         /// </summary>
         public void ElapsedTime()
         {
-            ////stopwatch is inbuilt class for that we have used diagnostics package 
-            Stopwatch stopwatch = new Stopwatch();
-            ////start() is static method in stopwatch class
-            stopwatch.Start();
-            ////for delay we have static sleep method of thread class
-            Thread.Sleep(1500);
-            ////stop() is also static method in stopwatch class
-            stopwatch.Stop();
-            ////finally we are calculating and printing elpased time during program execution
-            Console.WriteLine("Elapsed Time: " + stopwatch.Elapsed);
+            try
+            {
+                ////stopwatch is inbuilt class for that we have used diagnostics package 
+                Stopwatch stopwatch = new Stopwatch();
+                ////start() is static method in stopwatch class
+                stopwatch.Start();
+                ////for delay we have static sleep method of thread class
+                Thread.Sleep(1500);
+                ////stop() is also static method in stopwatch class
+                stopwatch.Stop();
+                ////finally we are calculating and printing elpased time during program execution
+                Console.WriteLine("Elapsed Time: " + stopwatch.Elapsed);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }

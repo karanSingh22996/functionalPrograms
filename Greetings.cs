@@ -17,17 +17,24 @@ namespace FunctionalProgrmas
         /// </summary>
         public void Greeting()
         {
-            ////taking string user input
-            Console.WriteLine("Enter your name");
-            string name = Console.ReadLine();
-            ////printing the welcomes notes
-            if (string.IsNullOrEmpty(name) || string.IsNullOrWhiteSpace(name))
+            try
             {
-                Console.WriteLine("Give proper data");
+                ////taking string user input
+                Console.WriteLine("Enter your name");
+                string name = Console.ReadLine();
+                ////printing the welcomes notes
+                if (string.IsNullOrEmpty(name) || string.IsNullOrWhiteSpace(name))
+                {
+                    Console.WriteLine("Give proper data");
+                }
+                else
+                {
+                    Console.WriteLine("Hello " + name + " How are you?");
+                }
             }
-            else
+            catch (Exception e)
             {
-                 Console.WriteLine("Hello " + name + " How are you?");
+                Console.WriteLine(e.Message);
             }
         }
     }
