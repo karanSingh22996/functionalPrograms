@@ -1,0 +1,7 @@
+C:\Users\admin\Desktop\C# Projects\FuntionalProgrmas\FunctionalPrograms\obj\Debug\FunctionalPrograms.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\C# Projects\FuntionalProgrmas\FunctionalPrograms\obj\Debug\FunctionalPrograms.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\C# Projects\FuntionalProgrmas\FunctionalPrograms\obj\Debug\FuntionalProgrmas.exe
+C:\Users\admin\Desktop\C# Projects\FuntionalProgrmas\FunctionalPrograms\obj\Debug\FuntionalProgrmas.pdb
+C:\Users\admin\Desktop\C# Projects\FuntionalProgrmas\FunctionalPrograms\bin\Debug\FuntionalProgrmas.exe.config
+C:\Users\admin\Desktop\C# Projects\FuntionalProgrmas\FunctionalPrograms\bin\Debug\FuntionalProgrmas.exe
+C:\Users\admin\Desktop\C# Projects\FuntionalProgrmas\FunctionalPrograms\bin\Debug\FuntionalProgrmas.pdb

@@ -23,13 +23,14 @@ namespace FunctionalProgrmas
                 Console.WriteLine("Enter your name");
                 string name = Console.ReadLine();
                 ////printing the welcomes notes
-                if (string.IsNullOrEmpty(name) || string.IsNullOrWhiteSpace(name))
+                
+                if (name.Replace(" ","").Length <= 0 || string.IsNullOrWhiteSpace(name))
                 {
                     Console.WriteLine("Give proper data");
                 }
                 else
                 {
-                    Console.WriteLine("Hello " + name + " How are you?");
+                    Console.WriteLine("Hello " + name.Replace(" ","") + " How are you?");
                 }
             }
             catch (Exception e)
